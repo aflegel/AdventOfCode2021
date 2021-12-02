@@ -10,7 +10,7 @@ if (int.TryParse(Console.ReadLine(), out var day))
 
 	Console.WriteLine(day switch
 	{
-		1 => await new Day1().SolveAsync(input),
+		1 => await new Day1(input).SolveAsync(),
 		_ => throw new NotImplementedException()
 	});
 }

@@ -2,5 +2,5 @@
 
 internal interface IAdventDay
 {
-	Task<string> SolveAsync(string input);
+	Task<string> SolveAsync();
 }
