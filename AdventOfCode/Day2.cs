@@ -33,16 +33,16 @@ public class Day2 : IAdventDay
 			};
 		}).ToList();
 
-	public int SolvePart1()
+	public string Part1()
 	{
 		var position = InputArray.Where(w => w.Direction == Direction.Forward).Sum(s => s.Scalar);
 
 		var depth = InputArray.Where(w => w.Direction != Direction.Forward).Sum(s => s.Direction == Direction.Up ? -s.Scalar : s.Scalar);
 
-		return position * depth;
+		return (position * depth).ToString();
 	}
 
-	public int SolvePart2()
+	public string Part2()
 	{
 		var aim = 0;
 		var position = 0;
@@ -64,8 +64,6 @@ public class Day2 : IAdventDay
 			}
 		});
 
-		return position * depth;
+		return (position * depth).ToString();
 	}
-
-	public async Task<string> SolveAsync() => SolvePart2().ToString();
 }

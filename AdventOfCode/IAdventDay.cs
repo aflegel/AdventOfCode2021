@@ -2,5 +2,6 @@
 
 internal interface IAdventDay
 {
-	Task<string> SolveAsync();
+	string Part1();
+	string Part2();
 }

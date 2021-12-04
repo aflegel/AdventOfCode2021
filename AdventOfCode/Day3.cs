@@ -37,7 +37,7 @@ public class Day3 : IAdventDay
 		return gammaRate;
 	}
 
-	public int SolvePart1()
+	public string Part1()
 	{
 		var gammaRateBits = new int[InputArray.First().Count];
 		var epsilonRateBits = new int[InputArray.First().Count];
@@ -53,10 +53,10 @@ public class Day3 : IAdventDay
 		var gammaRate = ConvertToInt(gammaRateBits);
 		var epsilonRate = ConvertToInt(epsilonRateBits);
 
-		return gammaRate * epsilonRate;
+		return (gammaRate * epsilonRate).ToString();
 	}
 
-	public int SolvePart2()
+	public string Part2()
 	{
 		var oxygen = InputArray;
 
@@ -83,8 +83,6 @@ public class Day3 : IAdventDay
 				break;
 		}
 
-		return ConvertToInt(oxygen.First().ToArray()) * ConvertToInt(co2.First().ToArray());
+		return (ConvertToInt(oxygen.First().ToArray()) * ConvertToInt(co2.First().ToArray())).ToString();
 	}
-
-	public async Task<string> SolveAsync() => SolvePart2().ToString();
 }

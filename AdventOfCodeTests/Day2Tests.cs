@@ -13,9 +13,9 @@ public class Day2Tests
 
 		var day2 = new Day2(input);
 
-		var answer = day2.SolvePart1();
+		var answer = day2.Part1();
 
-		answer.Should().Be(150);
+		answer.Should().Be("150");
 	}
 
 	[Fact]
@@ -25,8 +25,8 @@ public class Day2Tests
 
 		var day2 = new Day2(input);
 
-		var answer = day2.SolvePart2();
+		var answer = day2.Part2();
 
-		answer.Should().Be(900);
+		answer.Should().Be("900");
 	}
 }
