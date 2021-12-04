@@ -8,10 +8,14 @@ if (int.TryParse(Console.ReadLine(), out var day))
 	using var stream = new StreamReader($"Day{day}.txt");
 	var input = await stream.ReadToEndAsync();
 
-	Console.WriteLine(day switch
-	{
-		1 => await new Day1(input).SolveAsync(),
-		2 => await new Day2(input).SolveAsync(),
-		_ => throw new NotImplementedException()
-	});
+	Console.WriteLine(await GetDay(day, input).SolveAsync());
 }
+
+
+IAdventDay GetDay(int day, string input) => day switch
+{
+	1 => new Day1(input),
+	2 => new Day2(input),
+	3 => new Day3(input),
+	_ => throw new NotImplementedException()
+};
