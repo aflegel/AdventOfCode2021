@@ -1,6 +1,5 @@
-﻿
+﻿using AdventOfCode;
 
-using AdventOfCode;
 Console.WriteLine("Enter the day for the Advent Calendar '1-24'");
 
 if (int.TryParse(Console.ReadLine(), out var day))
@@ -13,11 +12,9 @@ if (int.TryParse(Console.ReadLine(), out var day))
 	Console.WriteLine($"Enter the which part of Day {day}:");
 	if (int.TryParse(Console.ReadLine(), out var part))
 	{
-
 		Console.WriteLine(GetPart(daySolver, part));
 	}
 }
-
 
 IAdventDay GetDay(int day, string input) => day switch
 {
@@ -26,6 +23,7 @@ IAdventDay GetDay(int day, string input) => day switch
 	3 => new Day3(input),
 	4 => new Day4(input),
 	5 => new Day5(input),
+	6 => new Day6(input),
 	_ => throw new NotImplementedException()
 };
 
