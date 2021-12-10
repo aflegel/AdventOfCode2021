@@ -6,7 +6,12 @@ namespace AdventOfCodeTests;
 
 public class Day2Tests
 {
-	private readonly string input = "forward 5\ndown 5\nforward 8\nup 3\ndown 8\nforward 2";
+	private readonly string input = @"forward 5
+down 5
+forward 8
+up 3
+down 8
+forward 2";
 
 	[Fact]
 	public void Part1SouldMatchExampleCount()

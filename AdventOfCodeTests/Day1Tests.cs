@@ -6,7 +6,16 @@ namespace AdventOfCodeTests;
 
 public class Day1Tests
 {
-	private readonly string input = "199\n200\n208\n210\n200\n207\n240\n269\n260\n263";
+	private readonly string input = @"199
+200
+208
+210
+200
+207
+240
+269
+260
+263";
 	
 	[Fact]
 	public void Part1SouldMatchExampleCount()
