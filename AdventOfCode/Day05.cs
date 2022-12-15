@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode;
 
-public class Day5 : IAdventDay
+public class Day05 : IAdventDay
 {
 	private struct Line
 	{
@@ -15,7 +15,7 @@ public class Day5 : IAdventDay
 	private int[,] Map { get; }
 	private Line[] Lines { get; }
 
-	public Day5(string input)
+	public Day05(string input)
 	{
 		Lines = input.Replace("\r", "").Split("\n").Select(s =>
 		{

@@ -1,10 +1,10 @@
 ﻿namespace AdventOfCode;
 
-public class Day7 : IAdventDay
+public class Day07 : IAdventDay
 {
 	private int[] InputArray { get; }
 
-	public Day7(string input) => InputArray = input.Split(",").Select(s => Convert.ToInt32(s)).ToArray();
+	public Day07(string input) => InputArray = input.Split(",").Select(s => Convert.ToInt32(s)).ToArray();
 
 
 	public string Part1()

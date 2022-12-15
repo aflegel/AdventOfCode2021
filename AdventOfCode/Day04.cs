@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode;
 
-public class Day4 : IAdventDay
+public class Day04 : IAdventDay
 {
 	private class Bingo
 	{
@@ -44,7 +44,7 @@ public class Day4 : IAdventDay
 	private int[] InputArray { get; }
 	private Bingo[] BingoArray { get; }
 
-	public Day4(string input)
+	public Day04(string input)
 	{
 		input = input.Replace("\r", "");
 

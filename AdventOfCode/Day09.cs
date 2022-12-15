@@ -1,10 +1,10 @@
 ﻿namespace AdventOfCode;
 
-public class Day9 : IAdventDay
+public class Day09 : IAdventDay
 {
 	private int[,] InputArray { get; }
 
-	public Day9(string input)
+	public Day09(string input)
 	{
 		var rows = input.Replace("\r", "").Split("\n");
 

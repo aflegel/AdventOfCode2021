@@ -1,9 +1,9 @@
 ﻿namespace AdventOfCode;
 
-public class Day6 : IAdventDay
+public class Day06 : IAdventDay
 {
 	private int[] InputArray { get; }
-	public Day6(string input) => InputArray = input.Replace("\r", "").Split(",").Select(s => Convert.ToInt32(s)).ToArray();
+	public Day06(string input) => InputArray = input.Replace("\r", "").Split(",").Select(s => Convert.ToInt32(s)).ToArray();
 
 	private long SimulateFish(int dayCount)
 	{

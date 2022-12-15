@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode;
 
-public class Day8 : IAdventDay
+public class Day08 : IAdventDay
 {
 	private record SegmentDisplay
 	{
@@ -10,7 +10,7 @@ public class Day8 : IAdventDay
 
 	private SegmentDisplay[] InputArray { get; }
 
-	public Day8(string input) => InputArray = input.Replace("\r", "").Split("\n").Select(s =>
+	public Day08(string input) => InputArray = input.Replace("\r", "").Split("\n").Select(s =>
 	{
 		var record = s.Split("|");
 		return new SegmentDisplay

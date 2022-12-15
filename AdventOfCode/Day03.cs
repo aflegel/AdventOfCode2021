@@ -1,10 +1,10 @@
 ﻿namespace AdventOfCode;
 
-public class Day3 : IAdventDay
+public class Day03 : IAdventDay
 {
 	private List<List<bool>> InputArray { get; }
 
-	public Day3(string input) => InputArray = input.Split("\n")
+	public Day03(string input) => InputArray = input.Split("\n")
 		.Where(w => w.Length > 0).Select(s => new List<bool>(s.Where(s => s is '0' or '1').Select(s => s != '0'))).ToList();
 
 	private int ConvertToInt(int[] sums)

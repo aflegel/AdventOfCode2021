@@ -4,7 +4,7 @@ using FluentAssertions;
 
 namespace AdventOfCodeTests;
 
-public class Day5Tests
+public class Day05Tests
 {
 	private readonly string input = @"0,9 -> 5,9
 8,0 -> 0,8
@@ -20,7 +20,7 @@ public class Day5Tests
 	[Fact]
 	public void Part1SouldMatchExampleCount()
 	{
-		var day2 = new Day5(input);
+		var day2 = new Day05(input);
 
 		var answer = day2.Part1();
 
@@ -30,7 +30,7 @@ public class Day5Tests
 	[Fact]
 	public void Part2SouldMatchExampleCount()
 	{
-		var day2 = new Day5(input);
+		var day2 = new Day05(input);
 
 		var answer = day2.Part2();
 

@@ -4,7 +4,7 @@ using FluentAssertions;
 
 namespace AdventOfCodeTests;
 
-public class Day8Tests
+public class Day08Tests
 {
 	private readonly string input = @"be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
 edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc
@@ -20,7 +20,7 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
 	[Fact]
 	public void Part1SouldMatchExampleCount()
 	{
-		var day2 = new Day8(input);
+		var day2 = new Day08(input);
 
 		var answer = day2.Part1();
 
@@ -30,7 +30,7 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
 	[Fact]
 	public void Part2SouldMatchExampleCount()
 	{
-		var day2 = new Day8(input);
+		var day2 = new Day08(input);
 
 		var answer = day2.Part2();
 

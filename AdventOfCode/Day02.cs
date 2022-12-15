@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode;
 
-public class Day2 : IAdventDay
+public class Day02 : IAdventDay
 {
 	private enum Direction
 	{
@@ -17,7 +17,7 @@ public class Day2 : IAdventDay
 
 	private List<Instruction> InputArray { get; }
 
-	public Day2(string input) =>
+	public Day02(string input) =>
 		InputArray = input.Split("\n").Where(w => w.Any()).Select(s => {
 			var split = s.Split(' ');
 			return new Instruction

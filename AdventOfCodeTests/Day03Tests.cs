@@ -4,31 +4,38 @@ using FluentAssertions;
 
 namespace AdventOfCodeTests;
 
-public class Day9Tests
+public class Day03Tests
 {
-	private readonly string input = @"2199943210
-3987894921
-9856789892
-8767896789
-9899965678";
+	private readonly string input = @"00100
+11110
+10110
+10111
+10101
+01111
+00111
+11100
+10000
+11001
+00010
+01010";
 
 	[Fact]
 	public void Part1SouldMatchExampleCount()
 	{
-		var day2 = new Day9(input);
+		var day2 = new Day03(input);
 
 		var answer = day2.Part1();
 
-		answer.Should().Be("15");
+		answer.Should().Be("198");
 	}
 
 	[Fact]
 	public void Part2SouldMatchExampleCount()
 	{
-		var day2 = new Day9(input);
+		var day2 = new Day03(input);
 
 		var answer = day2.Part2();
 
-		answer.Should().Be("1134");
+		answer.Should().Be("230");
 	}
 }

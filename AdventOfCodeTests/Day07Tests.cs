@@ -4,32 +4,27 @@ using FluentAssertions;
 
 namespace AdventOfCodeTests;
 
-public class Day2Tests
+public class Day07Tests
 {
-	private readonly string input = @"forward 5
-down 5
-forward 8
-up 3
-down 8
-forward 2";
+	private readonly string input = @"16,1,2,0,4,2,7,1,2,14";
 
 	[Fact]
 	public void Part1SouldMatchExampleCount()
 	{
-		var day2 = new Day2(input);
+		var day2 = new Day07(input);
 
 		var answer = day2.Part1();
 
-		answer.Should().Be("150");
+		answer.Should().Be("37");
 	}
 
 	[Fact]
 	public void Part2SouldMatchExampleCount()
 	{
-		var day2 = new Day2(input);
+		var day2 = new Day07(input);
 
 		var answer = day2.Part2();
 
-		answer.Should().Be("900");
+		answer.Should().Be("168");
 	}
 }
