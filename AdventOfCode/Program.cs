@@ -38,6 +38,7 @@ IAdventDay GetDay(int day, string input) => day switch
 	18 => new Day18(input),
 	19 => new Day19(input),
 	20 => new Day20(input),
+	21 => new Day21(input),
 	_ => throw new NotImplementedException()
 };
 
